@@ -1,20 +1,20 @@
 {
-    "name": "elven-syntax",
-    "theme": "syntax",
-    "version": "0.0.0",
-    "description": "Elven theme for atom.",
-    "keywords": [
-        "syntax",
-        "theme",
-        "elven",
-        "elf",
-        "elfy",
-        "dark"
-    ],
-    "repository": "https://github.com/milose/elven-syntax",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "readmeFilename": "README.md"
+  "name": "elven-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Elven theme for atom.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "elven",
+    "elf",
+    "elfy",
+    "dark"
+  ],
+  "repository": "https://github.com/milose/elven-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readmeFilename": "README.md"
 }
