@@ -1,0 +1,291 @@
+@import 'colors';
+@import 'syntax-variables';
+
+.comment {
+    color: @syntax-color-comment;
+}
+
+.constant {
+    color: @syntax-color-constant;
+
+    &.character.escape {
+        color: @elven_teal;
+
+        &.python {
+            color: @elven_banana;
+        }
+    }
+
+    // &.numeric {
+    //     color: @syntax-color-value;
+    // }
+
+    &.other.color {
+        color: @elven_teal;
+    }
+
+    &.other.symbol {
+        color: @elven_leaf;
+    }
+}
+
+.css {
+    &.class {
+        color: @elven_purple;
+    }
+
+    &.pseudo-element {
+        color: @elven_apple;
+    }
+}
+
+.entity {
+    &.name.function {
+        color: @syntax-color-function;
+    }
+
+    &.name.type,
+    &.name.class,
+    &.name.type.class {
+        color: @syntax-color-class;
+    }
+
+    &.name.section {
+        color: @elven_khaki;
+    }
+
+    &.name.tag {
+        color: @elven_scrubs;
+    }
+
+    &.id {
+        color: @elven_emerald;
+    }
+
+    &.inherited-class {
+        color: @elven_cream;
+    }
+}
+
+.html {
+    &.punctuation.definition.tag {
+        color: @elven_scrubs;
+    }
+}
+
+.invalid.illegal {
+    background-color: @elven_strawberry;
+    color: @syntax-background-color;
+}
+
+.keyword {
+    color: @syntax-color-keyword;
+
+    &.control {
+        color: @elven_khaki;
+    }
+
+    &.operator {
+        color: @syntax-text-color;
+    }
+
+    &.operator.python {
+        color: @elven_scrubs;
+    }
+
+    &.other.special-method {
+        color: @elven_mustard;
+    }
+
+    &.other.unit {
+        color: @elven_mustard;
+    }
+
+    &.control.exception {
+        color: @elven_raspberry;
+    }
+}
+
+.markup {
+    &.bold {
+        color: @elven_egg;
+        font-weight: bold;
+    }
+
+    &.changed {
+        color: @elven_lilac;
+    }
+
+    &.deleted {
+        color: @elven_strawberry;
+    }
+
+    &.italic {
+        color: @elven_purple;
+        font-style: italic;
+    }
+
+    &.heading .punctuation.definition.heading {
+        color: @elven_emerald;
+    }
+
+    &.inserted {
+        color: @elven_leaf;
+    }
+
+    &.list {
+        color: @elven_strawberry;
+    }
+
+    &.quote {
+        color: @elven_egg;
+    }
+
+    &.raw.inline {
+        color: @elven_leaf;
+    }
+}
+
+.meta {
+    &.class {
+        color: @elven_cream;
+    }
+
+    &.link {
+        color: @elven_raspberry;
+    }
+
+    &.require {
+        color: @elven_apple;
+    }
+
+    &.selector {
+        color: @elven_purple;
+    }
+
+    &.separator {
+        background-color: @gray_50;
+        color: @syntax-text-color;
+    }
+
+    &.function-call {
+        color: @elven_cream;
+    }
+}
+
+.none {
+    color: @syntax-text-color;
+}
+
+.punctuation {
+    &.definition {
+        &.comment {
+            color: @syntax-color-comment;
+        }
+
+        &.string {
+            color: @elven_teal;
+        }
+
+        &.parameters,
+        &.array {
+            color: @syntax-text-color;
+        }
+
+        &.variable {
+            color: @syntax-color-variable;
+        }
+
+        &.heading,
+        &.identity {
+            color: @elven_teal;
+        }
+
+        &.bold {
+            color: @elven_mustard;
+            font-weight: bold;
+        }
+
+        &.italic {
+            color: @elven_purple;
+            font-style: italic;
+        }
+    }
+
+    &.section.embedded {
+        color: darken(@elven_strawberry, 10%);
+    }
+}
+
+.source.gfm {
+    .link {
+        color: @elven_teal;
+
+        &.markup {
+            color: @elven_mustard;
+        }
+    }
+
+    .heading {
+        color: @elven_khaki;
+    }
+
+    .markup.code {
+        color: @elven_khaki;
+    }
+}
+
+.storage {
+    color: @elven_purple;
+
+    &.modifier {
+        color: @elven_scrubs;
+
+        &.extends,
+        &.implements {
+            color: @elven_purple;
+        }
+    }
+}
+
+.string {
+    color: @elven_teal;
+
+    &.regexp {
+        color: @elven_emerald;
+
+        .source.ruby.embedded {
+            color: @undecided;
+        }
+    }
+
+    &.other.link {
+        color: @undecided;
+    }
+}
+
+.support {
+    &.class {
+        color: @elven_cream;
+    }
+
+    &.function  {
+        color: @gray_75;
+
+        &.any-method {
+            color: @gray_75;
+        }
+    }
+}
+
+.variable {
+    color: @elven_banana;
+
+    &.interpolation {
+        color: darken(@elven_strawberry, 10%);
+    }
+
+    &.parameter.function {
+        color: @syntax-text-color;
+    }
+}
